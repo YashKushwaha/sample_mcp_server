@@ -2,6 +2,7 @@ name: sample mcp server
 description: This is a simple MCP server which exposes basic maths functions to test out mcp deployment
 
 startCommand:
+  type: stdio
   command: python
   args:
     - server.py
