@@ -6,6 +6,7 @@ startCommand:
   command: python
   args:
     - server.py
+  commandFunction: "__main__"  # This tells Smithery to execute the script starting from 'if __name__ == "__main__"'
 
 language: python
 
@@ -14,3 +15,5 @@ tools:
     description: Add two numbers.
   - name: multiply
     description: Multiply two numbers.
+  - name: greeting
+    description: Get a personalized greeting using the 'greeting' resource.
