@@ -1,11 +1,15 @@
 name: sample mcp server
-description: This is a simple MCP server which exposes basic maths functions to test out mcp deployment 
-startCommand: python server.py
+description: This is a simple MCP server which exposes basic maths functions to test out mcp deployment
+
+startCommand:
+  command: python
+  args:
+    - server.py
+
 language: python
+
 tools:
   - name: add
     description: Add two numbers.
   - name: multiply
-    description: multiply two numbers.
-
-    
+    description: Multiply two numbers.
