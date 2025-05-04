@@ -6,7 +6,6 @@ startCommand:
   command: python
   args:
     - server.py
-  commandFunction: "__main__"  # This tells Smithery to execute the script starting from 'if __name__ == "__main__"'
 
 language: python
 

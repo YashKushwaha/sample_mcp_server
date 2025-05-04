@@ -23,13 +23,9 @@ def get_greeting(name: str) -> str:
     return f"Hello, {name}!"
 
 if __name__ == "__main__":
-    print()
-    transport = "http"
-    if transport == "stdio":
-        print("Running server with stdio transport")
-        mcp.run(transport="stdio")
-    elif transport == "sse":
-        print("Running server with SSE transport")
-        mcp.run(transport="sse")
+    transport = "http"  # or set from ENV if needed
+    print(f"Running server with {transport} transport")
+    if transport in ["stdio", "sse", "http"]:
+        mcp.run(transport=transport)
     else:
         raise ValueError(f"Unknown transport: {transport}")
