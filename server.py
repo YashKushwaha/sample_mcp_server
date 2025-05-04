@@ -23,6 +23,7 @@ def get_greeting(name: str) -> str:
     return f"Hello, {name}!"
 
 if __name__ == "__main__":
+    print()
     transport = "stdio"
     if transport == "stdio":
         print("Running server with stdio transport")
